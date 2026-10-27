@@ -1,3 +1,20 @@
+
+import ProductTable from "../components/ProductTable";
 export default function Products() {
-  return <main><h1>Productos</h1></main>;
+  return (
+    <section aria-labelledby="products-title">
+      <div>
+        <p>Administración del catálogo</p>
+
+        <h1 id="products-title">Productos</h1>
+
+        <p>
+          Consulta, agrega y administra los productos de tu catálogo.
+        </p>
+      </div>
+
+      <ProductTable />
+    </section>
+  );
 }
+
